@@ -90,7 +90,7 @@ while (!Number.isInteger(result) || result <= 0 || result >150) {
     result = eval(calculation);
 
     randomNumber.innerHTML = result;
-    console.log(calculation);
+    
     }
 }
 generateCalculation();
@@ -129,7 +129,7 @@ let coloredBtns = [];
       userCalc += slot.textContent;
     }
 
-    console.log(eval(userCalc))
+   
     // if the user's calculation does not equal to the random number or 
     // does not have enough inputs (6), pop up a message
     if (eval(userCalc) != randomNumber.textContent || userCalc.length < 6) {
@@ -174,5 +174,5 @@ let coloredBtns = [];
         }
         currentRowIndex++;
       }
-      console.log(currentRowIndex);
+      
 })
